@@ -1,0 +1,123 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Add this import to your CSS file or index.js */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.navbar {
+    background-color: rgb(56, 53, 53);
+    
+}
+.side{
+    background-color: #1a1919;
+  
+}
+.navbar a, .footer-text {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.icon {
+    color: white;
+}
+.content, .sub-content {
+    background-color: #E5E5E5;
+}
+.promo-section {
+    background-color: #a05a2c;
+    color: white;
+}
+.circle-img {
+    border-radius: 
+50%;
+width: 150px;
+height: 150px;
+overflow: hidden;
+}
+.section-title {
+color: #333;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+.footer {
+background-color: #333;
+}
+.button {
+background-color: white;
+color: #a05a2c;
+border: 2px solid white;
+padding: 0.5rem 1.5rem;
+font-weight: bold;
+border-radius: 0.375rem;
+text-transform: uppercase;
+}
+.button:hover {
+background-color: #a05a2c;
+color: white;
+border-color: #a05a
+
+2c;
+}
+.contact-section {
+background-color: #f3f4f6;
+padding: 4rem 0;
+text-align: center;
+}
+.gallery {
+display: flex;
+flex-direction: column;
+align-items: center; /* This will center the carousel items on the cross-axis (vertically) */
+justify-content: center; /* This will center the carousel items on the main-axis (horizontally) */
+overflow-x: auto;
+width: 100%; /* Adjust if you want the gallery to have a specific width */
+}
+
+.gallery img {
+display: block; /* This will treat the image as a block-level element */
+max-width: 100%;
+height: auto; /* Preserve aspect ratio */
+margin: 0 auto; /* This will center the image if it's not as wide as the gallery container */
+border-radius: 0.375rem;
+}
+.whatsapp-button {
+/* ... existing styles ... */
+display: inline-flex; /* Use inline-flex to keep the button inline but also apply flexbox properties */
+justify-content: center; /* Center the button's contents */
+margin: 0 auto; /* Auto margins on both sides to center the button in the container */
+}
+
+.whatsapp-button:hover {
+background-color: #128C7E;
+}
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+
+
+.modal {
+    color: white;
+    display: none; /* Keep the modal hidden initially */
+    position: fixed; /* Fixed position */
+    top: 50%; /* Position at 50% from the top */
+    left: 50%; /* Position at 50% from the left */
+    transform: translate(-50%, -50%); /* Translate to center the modal */
+    background-color: #000000; /* Background color */
+    color: white; /* Text color */
+    /* Add any additional styling you need */
+    z-index: 1000; /* Ensure the modal is above other elements */
+}
+
+.modal.visible {
+    display: block; /* Make the modal visible when it has the 'visible' class */
+}
+
+.modal-content { /* ... styles for modal content ... */ }
+
+.close {
+    /* ... styles for close button ... */
+    cursor: pointer; /* Add a cursor style to indicate it's clickable */
+}

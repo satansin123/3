@@ -1,0 +1,12 @@
+/* MyCarousel.css */
+.custom-carousel .carousel-image {
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images cover the area, might crop */
+  }
+  
+  .custom-carousel {
+    width: 100%; /* Ensure the carousel is as wide as its container */
+    max-width: 900px; /* Maximum width */
+    margin: auto; /* Center the carousel if the screen is wider */
+  }
+  
